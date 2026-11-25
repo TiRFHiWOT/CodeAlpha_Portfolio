@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tirfhiwot Hailu — Frontend Developer</title>
+  <meta name="description" content="Portfolio of Tirfhiwot Hailu, a front-end developer building responsive, user-friendly web applications with React, Next.js, TypeScript, JavaScript and Tailwind CSS." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="appbar">
+    <a class="brand" href="#home">
+      <span class="brand-mark" aria-hidden="true">TH</span>
+      <span class="brand-name">Tirfhiwot Hailu</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="appbar-actions">
+      <a class="btn btn-primary btn-nav" href="TIRFHIWOT_HAILU_CV.pdf" download>Download CV</a>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle light and dark mode">☀</button>
+      <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <p class="eyebrow reveal">Hello, I'm</p>
+      <h1 class="reveal">Tirfhiwot Hailu</h1>
+      <p class="role reveal">Frontend Developer</p>
+      <p class="intro reveal">I build responsive, user-friendly web applications with React, Next.js, TypeScript, JavaScript, Tailwind CSS, and modern web technologies — focused on clean interfaces, making sure things work well across devices, and turning designs into functional products.</p>
+      <ul class="hero-stats reveal">
+        <li><strong>8</strong><span>Selected projects</span></li>
+        <li><strong>100%</strong><span>Lighthouse mobile responsiveness</span></li>
+        <li><strong>Jan 2025 — Present</strong><span>Awura Tech</span></li>
+      </ul>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-outline" href="TIRFHIWOT_HAILU_CV.pdf" download>Download CV</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <p class="section-eyebrow reveal">About</p>
+      <h2 class="reveal">About</h2>
+      <p class="section-lead reveal">Front-End Developer who builds clean, fast, accessible and responsive interfaces with React, Next.js, TypeScript and Tailwind CSS. Experienced in UI architecture, design-system work, state management and API integration across event, hospitality, corporate, admin and point-of-sale products — with 100% Lighthouse mobile responsiveness on multiple projects.</p>
+      <div class="about-grid">
+        <p class="reveal">I've worked on different projects, from web applications and booking platforms to event platforms, focusing on building clean interfaces, making sure things work well across devices, and turning designs into functional products. I'm also comfortable working with APIs, integrating backend services, and collaborating with other developers. I'm always looking to improve, take on new challenges, and contribute to building products that people actually enjoy using.</p>
+        <ul class="facts reveal">
+          <li><span>Focus</span> Frontend development</li>
+          <li><span>Stack</span> React · Next.js · TypeScript · JavaScript · Tailwind CSS</li>
+          <li><span>Based in</span> Addis Ababa, Ethiopia</li>
+          <li><span>Tools</span> VS Code · GitHub</li>
+          <li><span>Also</span> Amharic transcription</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <p class="section-eyebrow reveal">Expertise</p>
+      <h2 class="reveal">Skills</h2>
+      <p class="section-lead reveal">The tools I use to build for the web.</p>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><h3>Core</h3><p>HTML5 · CSS3 · JavaScript (ES6+) · TypeScript</p></article>
+        <article class="skill-card reveal"><h3>Frameworks &amp; Libraries</h3><p>React · Next.js · Redux Toolkit · RTK Query · Apollo Client / GraphQL · React Hook Form · Zod</p></article>
+        <article class="skill-card reveal"><h3>UI &amp; Styling</h3><p>Tailwind CSS · ShadCN UI · Radix UI · Responsive Design · Design Systems · Accessibility · Localization (i18n)</p></article>
+        <article class="skill-card reveal"><h3>Performance &amp; Quality</h3><p>SEO · Performance Optimization · Lighthouse · Mobile-First Design</p></article>
+        <article class="skill-card reveal"><h3>Integrations</h3><p>REST &amp; GraphQL APIs · Firebase Auth · Supabase Auth · Stripe · Leaflet Maps · QR Codes · PDF Rendering</p></article>
+        <article class="skill-card reveal"><h3>Tools</h3><p>Git · GitHub · Figma · Vercel · SQL (basic)</p></article>
+        <article class="skill-card reveal"><h3>Soft Skills</h3><p>Team Collaboration · UX Awareness · Communication</p></article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <p class="section-eyebrow reveal">Selected Work</p>
+      <h2 class="reveal">Selected Projects</h2>
+      <p class="section-lead reveal">Professional &amp; freelance projects.</p>
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-body">
+            <h3>OwlEvents 2.0</h3>
+            <p class="project-meta">Event Ticketing &amp; Voting Platform · Awura Tech</p>
+            <p>Built the full front-end of a multi-tenant platform covering ticketing, public voting, exhibitor lead tracking, RSVP management and a vendor/venue marketplace, using Next.js, React, Tailwind CSS and Radix UI. Dual data layer with Apollo Client/GraphQL and RTK Query, Zod validation and automatic token refresh. Key modules: event discovery/search, checkout and ticket wallet, exhibitor lead hub, and public voting with real-time tallying. Integrated Firebase and Google OAuth, QR-code digital passes and PDF ticket rendering. Multi-language (English, Amharic, Arabic, French, Swahili) and multi-currency support.</p>
+            <p class="tags"><span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>GraphQL</span><span>RTK Query</span></p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-body">
+            <h3>Cheq-u</h3>
+            <p class="project-meta">POS &amp; Restaurant Management Platform · Personal project, deployed · Aug 2025 — Present</p>
+            <p>Designed and built a full-stack POS platform from the ground up; live and used in production by a real business. Core POS interface: order creation (dine-in, takeaway, delivery), floor plan/table management and multi-method checkout. Real-time Kitchen Display System, customer wallboard and public QR-code ordering. Reporting dashboards (sales, profit, expenses, attendance) and role-based staff access with PIN login. Inventory and recipe-costing logic, low-stock alerts and Telegram bot notifications.</p>
+            <p class="tags"><span>Full-stack</span><span>POS</span><span>Real-time</span></p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-body">
+            <h3>SudoNest Guest Web App</h3>
+            <p class="project-meta">Hotel booking platform · Apr 2025 — Jul 2025</p>
+            <p>Built the guest-facing front-end of a hotel booking platform for the South Sudan market with Next.js, React and Tailwind CSS. Multi-step checkout (Stripe and mobile money, QR-code booking pass) and RTK Query services. Interactive map search, photo galleries and a profile portal (trips, wishlists, reviews). Protected routing with Supabase auth and English/Arabic localization.</p>
+            <p class="tags"><span>Next.js</span><span>React</span><span>Stripe</span><span>Supabase</span></p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-body">
+            <h3>Nestangle Admin Portal</h3>
+            <p class="project-meta">Admin dashboard · Apr 2025 — Jul 2025</p>
+            <p>Built front-end features for the admin dashboard of Nestangle, a video-first apartment discovery platform, using Next.js, React and Redux Toolkit/RTK Query. Verification workflows, executive analytics dashboards and geospatial property maps with Leaflet. Accessible UI with Radix UI and ShadCN, form validation via React Hook Form and Zod.</p>
+            <p class="tags"><span>Next.js</span><span>React</span><span>Redux Toolkit</span><span>Leaflet</span></p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-body">
+            <h3>Sudd Technologies Corporate Platform</h3>
+            <p class="project-meta">Corporate marketing site · Apr 2025 — Jul 2025</p>
+            <p>Developed an 8-page corporate marketing site with Next.js, React and Tailwind CSS. Modular, reusable sections (hero banners, product showcases, testimonials, FAQs). Custom design system with brand color tokens and fully responsive layouts.</p>
+            <p class="tags"><span>Next.js</span><span>React</span><span>Tailwind CSS</span></p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-body">
+            <h3>ESAAMLG Annual Conference Website</h3>
+            <p class="project-meta">Conference website · May 2025 — Jun 2025</p>
+            <p>Built the complete front-end for the official conference of the Eastern and Southern Africa Anti-Money Laundering Group, hosted in Ethiopia. Core pages to international event standards, improving noticeably on the previous year's site.</p>
+            <p class="tags"><span>Front-end</span><span>Events</span></p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-body">
+            <h3>Pulse of Africa (POA)</h3>
+            <p class="project-meta">News broadcasting website · Apr 2025 — May 2025</p>
+            <p>Contributed to the front-end of an African news broadcasting website, focused on responsive content presentation, accessibility and lightweight performance.</p>
+            <p class="tags"><span>Front-end</span><span>Accessibility</span></p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-body">
+            <h3>Minor Hockey Talks</h3>
+            <p class="project-meta">Forum platform · Freelance (Upwork)</p>
+            <p>Maintained and extended a forum platform built with React, TypeScript, Vite and Supabase. Fixed ad-display issues across Google Ad Manager/Ad.Plus placements and improved UI responsiveness site-wide. Implemented differentiated posting rate limits for signed-in vs. guest users.</p>
+            <p class="tags"><span>React</span><span>TypeScript</span><span>Vite</span><span>Supabase</span></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience / Resume -->
+    <section class="section" id="experience">
+      <p class="section-eyebrow reveal">Career</p>
+      <h2 class="reveal">Experience</h2>
+      <p class="section-lead reveal">What I've been working on.</p>
+      <ol class="timeline">
+        <li class="reveal">
+          <p class="timeline-date">Jan 2025 — Present</p>
+          <h3>Web Developer (Front-End) — Awura Tech, Addis Ababa</h3>
+          <ul class="job-bullets">
+            <li>Built the complete front-end and third-party integrations for OwlEvents 2.0, an enterprise event ticketing, public voting and exhibitor lead-tracking platform.</li>
+            <li>Delivered numerous production websites across different industries, following mobile-first standards.</li>
+            <li>Worked with cross-functional teams to turn UI/UX designs into clean, accessible, user-friendly interfaces.</li>
+            <li>Contributed to building and testing web portals to ensure quality and functionality.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <p class="section-eyebrow reveal">Education</p>
+      <h2 class="reveal">Education</h2>
+      <p class="section-lead reveal">Where I studied.</p>
+      <ol class="timeline">
+        <li class="reveal">
+          <p class="timeline-date">2015 — 2020</p>
+          <h3>Bachelor of Science in Engineering</h3>
+          <p>Addis Ababa Science &amp; Technology University</p>
+        </li>
+      </ol>
+      <p class="interests reveal">Interests: UI/UX design trends · Exploring new front-end tools and frameworks · Building digital products that solve real-world problems</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <p class="section-eyebrow reveal">Get in Touch</p>
+      <h2 class="reveal">Let's Work Together</h2>
+      <p class="section-lead reveal">Want to work together or just say hello? Reach out — I'd love to hear from you.</p>
+      <div class="contact-grid">
+        <a class="contact-card reveal" href="mailto:azromjr@gmail.com">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">azromjr@gmail.com</span>
+        </a>
+        <a class="contact-card reveal" href="tel:+251935932496">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+251 935 932 496</span>
+        </a>
+        <a class="contact-card reveal" href="https://github.com/TiRFHiWOT" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/TiRFHiWOT</span>
+        </a>
+        <a class="contact-card reveal" href="https://www.linkedin.com/in/tirfhiwot-hailu/" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">linkedin.com/in/tirfhiwot-hailu</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Tirfhiwot Hailu · Front-End Developer · Addis Ababa, Ethiopia</p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <a href="#home">Back to top ↑</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
